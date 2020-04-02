@@ -1,0 +1,24 @@
+@mixin medium {
+    @media all and (min-width: #{$bp-md}) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media all and (min-width: #{$bp-lg}) {
+        @content;
+    }
+}
+
+// Tylko przykład korzystania z powyższych mixin - nie powinno to być w tym miejscu!!!
+// h1 {
+//     font-size: 2 * $font-base;
+//     color: red;
+//     @include medium() {
+//         font-size: 4 * $font-base;
+//         color: green;
+//     }
+//     @include large() {
+//         font-size: 6 * $font-base;
+//     }
+// }
